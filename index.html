@@ -31,7 +31,7 @@
 					<p class="header-text">
 						Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить.
 					</p>
-					<a href="#" class="btn" id="btn">Двигаться к мечте!</a>
+					<a href="#form" class="btn" id="btn">Двигаться к мечте!</a>
 				</div>
 
 				<img class="content-bg" id="img-bg" src="./img/bg_header.png" alt="Фоновое изображение">
@@ -66,14 +66,14 @@
 
 	<!------Форма с заказом-------------->
 
-	<section class="order">
+	<section class="order" id="form">
 		<div class="container cont-order animated">
 			<h2>Форма заказа билета в будущее</h2>
 
-			<form class="order-form" action="#">
-				<input type="text" name="name" value="" placeholder="Имя">
-				<input type="text" name="tel" value="" placeholder="Телефон">
-				<input type="text" name="email" value="" placeholder="Е-майл">
+			<form class="order-form" action="mail.php" method="POST">
+				<input type="text" name="user_name" value="" placeholder="Имя">
+				<input type="text" name="user_phone" value="" placeholder="Телефон">
+				<input type="text" name="user_email" value="" placeholder="Е-майл">
 				<input name="message" placeholder="Куда я полечу в ближайшее время?">
 				<!--  <input type="submit" name="submit" class="form-btn" value="Двигаться к мечте!">-->
 				<button type="submit" name="submit" class="form-btn">Двигаться к мечте!</button>
